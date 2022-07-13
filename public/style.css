@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.containerProductos {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 350px;
+}
+
+.listadoProductos {
+    width: auto;
+    margin: 0 auto;
+    height: 100%;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardProducto {
+    width: 13rem;
+    border-radius: 7px;
+    padding: 5px;
+    transition: all 200ms;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+  }
+
+.cardProducto:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.5);
+  }
+
+  .cardBody {
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .cardBody > * {
+    margin-top: 10px;  
+  }
+
+
+
+  .grid-container {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-auto-rows: minmax(240px, auto);
+    grid-auto-flow: dense;
+    gap: 27px;
+    padding: 20px;
+    margin: auto;
+    justify-items: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .cta {
+    border: none;
+    background: none;
+   }
+   
+   .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+   }
+
+   .modal {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 100;
+  }
+
+
+  .form-content{
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+    background: #ffffff;
+    max-width: 300px;
+    margin: 1.75rem auto;
+  }
+  
+  .form-content .control {
+    padding: 5px 0;
+  }
+  
+  .form-content .form-footer {
+    margin-top: 8px;
+  }
+
+  .label {
+    width: 70px;
+    display: inline-block;
+  }

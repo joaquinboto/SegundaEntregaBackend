@@ -1,0 +1,22 @@
+[
+    {
+        "productos": [
+            {
+                "name": "Jean",
+                "cantidad": "15",
+                "img": "https://firebasestorage.googleapis.com/v0/b/react-ecommerce-941bf.appspot.com/o/jean.jpeg?alt=media&token=f9dcc831-5685-4ff7-a673-52e8144d9c59",
+                "precio": "500",
+                "timestipe": 1655932543608,
+                "id": 1
+            },
+            {
+                "id": 2,
+                "name": "Conjunto",
+                "cantidad": "15",
+                "precio": "124",
+                "img": "https://firebasestorage.googleapis.com/v0/b/react-ecommerce-941bf.appspot.com/o/conjuntobasico.jpeg?alt=media&token=02241da1-4b7a-4943-b0fd-04c5f7c2938e"
+            }
+        ],
+        "id": "1"
+    }
+]
